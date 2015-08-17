@@ -29,6 +29,17 @@
 				</div>
 			</div>
 		</nav>
+		<div id="hd-scorestrip">
+				<div id="hdscorestripContainer"><center><embed height="50" width="1024" flashvars="url=/liveupdate/scorestrip/ss.xml&baseUrl=http://www.nfl.com" wmode="transparent" base="" allowscriptaccess="always" quality="true" bgcolor="#ffffff" name="hdscorestripSWF" id="hdscorestripSWF" style="" src="http://flash.static.nfl.com/static/site/flash/scorestrip/global-alt.swf" type="application/x-shockwave-flash"></center></div>
+				<script type="text/javascript">
+					nfl.global.embedScoreStrip({
+						
+						srcNode: "hdscorestripContainer",
+						url: '/liveupdate/scorestrip/ss.xml'
+					});
+				</script>
+		</div>
+
 		<!--<h1><font color="#AD9533">Next game</font></h1>
 
 		<h1><font color="#AD9533">Latest score</font></h1>
