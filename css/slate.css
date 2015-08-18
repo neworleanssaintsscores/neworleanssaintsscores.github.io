@@ -2380,6 +2380,27 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.success:hover > th {
   background-color: #4fbd4f;
 }
+.table > thead > tr > td.gold,
+.table > tbody > tr > td.gold,
+.table > tfoot > tr > td.gold,
+.table > thead > tr > th.gold,
+.table > tbody > tr > th.gold,
+.table > tfoot > tr > th.gold,
+.table > thead > tr.gold > td,
+.table > tbody > tr.gold > td,
+.table > tfoot > tr.gold > td,
+.table > thead > tr.gold > th,
+.table > tbody > tr.gold > th,
+.table > tfoot > tr.gold > th {
+  background-color: #9F8958;
+}
+.table-hover > tbody > tr > td.gold:hover,
+.table-hover > tbody > tr > th.gold:hover,
+.table-hover > tbody > tr.gold:hover > td,
+.table-hover > tbody > tr:hover > .gold,
+.table-hover > tbody > tr.gold:hover > th {
+  background-color: #9F8958;
+}
 .table > thead > tr > td.info,
 .table > tbody > tr > td.info,
 .table > tfoot > tr > td.info,
