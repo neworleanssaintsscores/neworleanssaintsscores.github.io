@@ -69,24 +69,6 @@
 		    </tr>
 		  </thead>
 		  <tbody id="summaryTable">
-		    <tr>
-		      <td>Ravens</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		    </tr>
-		  	<tr>
-		      <td>Saints</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		      <td>0</td>
-		    </tr>
 		   </tbody>
 		</table> </div>
 
@@ -252,6 +234,15 @@ document.getElementById("awayLabel").innerHTML=vnn;
 document.getElementById("homeScore").innerHTML=hscore;
 document.getElementById("awayScore").innerHTML=vscore;
 
+$.getJSON(json_data_url, function(data) {
+	home=data[gameID]["home"]
+	away=data[gameID]["away"]
+	home_scoring = home["score"]
+	away_scoring = away["score"]
+	console.log(home_scoring[5])
+	console.log(home_scoring["T"])
+	document.getElementById("summaryTable").innerHTML="<tr><td>"+hnn+"</td><td>"+home_scoring[1]+"</td><td>"+home_scoring[2]+"</td><td>"+home_scoring[3]+"</td><td>"+home_scoring[4]+"</td><td>"+home_scoring[5]+"</td><td>"+home_scoring["T"]+"</td></tr><tr><td>"+vnn+"</td><td>"+away_scoring[1]+"</td><td>"+away_scoring[2]+"</td><td>"+away_scoring[3]+"</td><td>"+away_scoring[4]+"</td><td>"+away_scoring[5]+"</td><td>"+away_scoring["T"]+"</td></tr>"
 
+});
 
 </script>
